@@ -1,0 +1,23 @@
+A Program to demonstrate how to get record from db by using findByNamedParam method:
+Programs:
+* Product.java
+* ProductDAO.java
+* ProductDAOImpl.java
+* ProductDetails.java
+* AppConfig.java
+* Test.java
+Note:
+* The findByNamedParam(String queryString, String paramName, Object value) method is to execute an HQL query, binding one value to a ":" named parameter in the query string.
+* The above method accept three arguments, first one is HQL query as String, second one is single parameter as String and third one is single value as Object.
+* The findByNamedParam(String queryString, String[] paramNames, Object[] values) method is to execute an HQL query, binding a number of values to ":" named parameters in the query string.
+* The above method accept three arguments, first one is HQL query as String, second one is multiple parameters as String array and third one is multiple values as Object array.
+Output:
+---------- Product List by single parameter ----------
+Product [productId=3, productCode=P003, productName=Bag, quantity=24, price=120.5]
+---------- Product List by multiple parameters ---------
+Product [productId=4, productCode=P004, productName=Pen, quantity=15, price=12.75]
+--------- Product Names List by multiple Parameters --------
+Pen
+-------- Product Code And Name List by multiple Parameters -------
+P002 Pen
+P004 Pen
